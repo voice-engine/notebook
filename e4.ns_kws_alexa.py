@@ -44,7 +44,7 @@ def leds_off():
 def main():
     logging.basicConfig(level=logging.DEBUG)
 
-    src = Source(rate=16000, channels=4, device_name='capture')
+    src = Source(rate=16000, channels=4, device_name='default')
     ds = DelaySum(channels=src.channels)
     ns = NS(rate=16000, channels=1)
     kws = KWS(model='alexa')
